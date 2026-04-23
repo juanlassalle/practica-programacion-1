@@ -42,7 +42,7 @@ Algoritmo Ejercicio_9
 		recargo = recargo + cuotaBase * 0.05
 	FinSi
 	
-	si edad < 40 Entonces
+	si edad > 40 Entonces
 		recargo = recargo + cuotaBase * 0.20
 	SiNo
 		recargo = recargo + cuotaBase * 0.10
