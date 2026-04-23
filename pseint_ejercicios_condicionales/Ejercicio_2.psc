@@ -3,23 +3,26 @@
 //después de las 40 horas cada hora se considera como excedente y se
 //paga el doble
 Algoritmo Ejercicio_2
-	Definir sueldoSemanal, sueldoDoble,horasTrabajadas, pagoPorHora Como Real
-	
-	Escribir Sin Saltar "Ingresar las horas trabajadas: "
-	Leer horasTrabajadas
-	
-	Escribir Sin Saltar "Ingresar el pago por hora: "
-	Leer pagoPorHora
-	
-	Escribir "==========Sueldo semanal=========="
-	sueldoSemanal = horasTrabajadas * pagoPorHora
-	
-	Escribir "El sueldoSemanal sin horas extras es: ",sueldoSemanal
-	
-	Escribir "==========Sueldo semanal con horas extras=========="
-	si horasTrabajadas > 40 Entonces
-		sueldoDoble = sueldoSemanal * 2
-	FinSi
-	
-	Escribir "El sueldo semanal con horas extras es: ", sueldoDoble
+		Definir horasTrabajadas, pagoPorHora, sueldoTotal, horasExtras Como Real
+		
+		Escribir Sin Saltar "Ingresar las horas trabajadas: "
+		Leer horasTrabajadas
+		
+		Escribir Sin Saltar "Ingresar el pago por hora: "
+		Leer pagoPorHora
+		
+		Si horasTrabajadas > 40 Entonces
+			// Calculamos cuántas horas son extras
+			horasExtras = horasTrabajadas - 40
+			// Las primeras 40 se pagan normal + las extras al doble
+			sueldoTotal = (40 * pagoPorHora) + (horasExtras * (pagoPorHora * 2))
+			Escribir "Horas extras detectadas: ", horasExtras
+		Sino
+			// Si trabajó 40 o menos, todo es pago normal
+			sueldoTotal = horasTrabajadas * pagoPorHora
+		FinSi
+		
+		Escribir "=========================================="
+		Escribir "El sueldo total semanal es: $", sueldoTotal
+		Escribir "=========================================="
 FinAlgoritmo
