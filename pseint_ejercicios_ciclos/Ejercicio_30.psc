@@ -68,5 +68,6 @@ Algoritmo Ejercicio_30
 		Escribir "Descuento aplicado: $", descuento
 		Escribir "Sueldo Neto (Final): $", sueldoSemanalFinal
 		Escribir "============================================================="
+		contador = contador + 1
 	FinMientras
 FinAlgoritmo
