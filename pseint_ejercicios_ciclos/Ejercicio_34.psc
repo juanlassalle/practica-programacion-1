@@ -1,5 +1,5 @@
 //Crear un menú de un cajero automático simple, en el que
-// se deposita dinero. Con un saldo inicial igual a cero
+// se deposita dinero. Con un saldo inicial igual a 1000
 Algoritmo Ejercicio_34
 	Definir saldo, deposito Como Real
 	Definir op Como Entero
