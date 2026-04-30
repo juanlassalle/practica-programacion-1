@@ -13,7 +13,7 @@ Algoritmo Ejercicio_2
 		suma = suma + valores
 		
 		contador = contador + 1
-	Hasta Que contador > 10
+	Hasta Que contador = 10
 	
 	Escribir "La suma de los valores es: ",suma
 FinAlgoritmo
