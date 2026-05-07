@@ -13,10 +13,11 @@ Algoritmo Ejercicio_8
 //		Escribir Sin Saltar "Ingresar cantidad: "
 //		Leer cantidad
 //		
-//		si cantidad <= 0 Entonces
-//			cantidadeNegativa = cantidadeNegativa + 1
-//		SiNo
+//		si cantidad > 0 Entonces
 //			cantidadePositiva = cantidadePositiva + 1
+//		SiNo
+//			
+			cantidadeNegativa = cantidadeNegativa + 1
 //		FinSi
 //		contador = contador + 1
 //	Hasta Que contador > nCantidades
