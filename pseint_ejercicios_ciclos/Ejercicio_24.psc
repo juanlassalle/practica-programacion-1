@@ -26,14 +26,11 @@ Algoritmo Ejercicio_24
 		
 		si precio >= 200 Entonces
 			descuento = precio * 0.15
-			precioFinal = precio - descuento
 		SiNo
 			si precio > 100 Entonces
 				descuento = precio * 0.12
-				precioFinal = precio - descuento
 			SiNo
 				descuento = precio * 0.10
-				precioFinal = precio - descuento
 			FinSi
 		FinSi
 		
