@@ -34,6 +34,7 @@ Algoritmo Ejercicio_16
 			FinSi
 		FinPara
 	FinPara
+	//suma = 0
 //	Para c = 1 Hasta 3 Hacer
 //		suma = suma + arreglo[1,c] Se suma directamente la fila 1
 //	FinPara
