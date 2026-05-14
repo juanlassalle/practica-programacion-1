@@ -45,12 +45,15 @@ Algoritmo Ejercicio_33
 			1:
 				impuesto = costo * 0.10
 				costoA = costoA + impuesto
+				totalGlobal = totalGlobal + costoA
 			2:
 				impuesto = costo * 0.07
 				costoB = costoB + impuesto
+				totalGlobal = totalGlobal + costoB
 			3:
 				impuesto = costo * 0.05
 				costoC = costoC + impuesto
+				totalGlobal = totalGlobal + costoC
 		Fin Segun
 		
 		Escribir "-------------------------------------------------------"
