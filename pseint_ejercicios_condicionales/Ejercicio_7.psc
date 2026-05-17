@@ -26,7 +26,7 @@ Algoritmo Ejercicio_7
 				si promedio >= 6 Entonces
 					beca = 500
 				SiNo
-					carta = "Estudien más en el próximo ciclo escolar"
+					carta = "Estudie más en el próximo ciclo escolar"
 				FinSi
 			FinSi
 		FinSi
@@ -40,11 +40,14 @@ Algoritmo Ejercicio_7
 				si promedio >= 6 Entonces
 					beca = 100
 				SiNo
-					carta = "Estudien más en el próximo ciclo escolar"
+					carta = "Estudie más en el próximo ciclo escolar"
 				FinSi
 			FinSi
 		FinSi
 	FinSi
-	
-	Escribir "Alumno cuyo promedio es: ",promedio," recibirá una beca de ", beca
+	si beca > 0 Entonces
+		Escribir "Alumno cuyo promedio es: ",promedio," recibirá una beca de ", beca
+	SiNo
+		Escribir "Alumno cuyo promedio es: ",promedio," se le recomienda que. ", carta
+	FinSi
 FinAlgoritmo
